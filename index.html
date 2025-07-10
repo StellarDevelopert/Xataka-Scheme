@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Por qué Scheme ha quedado obsoleto? | Xataka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+      color: #ccc;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #009688;
+    }
+
+    .xataka-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .social-links {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffc8;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    main {
+      flex: 3;
+      background-color: #1c1c1c;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    }
+
+    aside {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    h1, h2 {
+      color: #00ffc8;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .sidebar-box {
+      background-color: #1c1c1c;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #888;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.8em;
+      border-top: 1px solid #009688;
+    }
+
+    a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    .broken-link {
+      font-size: 0.85em;
+      color: #888;
+      font-style: italic;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #00ffc8;
+      margin: 0 5px;
+      font-size: 0.85em;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <div class="xataka-title">Xataka</div>
+  <div class="date">Publicado el 17 de mayo de 2011</div>
+  <div class="social-links">
+    <a href="https://twitter.com/xataka" target="_blank">
+      <img src="https://pngimg.com/uploads/twitter/twitter_PNG15.png" alt="Twitter" style="height:24px; vertical-align:middle;">
+    </a>
+    <a href="https://www.youtube.com/user/xatakaTV" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" style="height:24px; vertical-align:middle;">
+    </a>
+  </div>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Análisis</a>
+    <a href="#">Movilidad</a>
+    <a href="#">Ciencia</a>
+    <a href="#">IA</a>
+  </nav>
+
+  <div class="container">
+    <main>
+
+      <h1>¿Por qué Scheme ha quedado obsoleto?</h1>
+
+      <section>
+        <p><strong>Scheme</strong>, el dialecto minimalista de Lisp, ha sido durante décadas un instrumento académico para enseñar programación funcional. Pero frente a los desafíos actuales del software, su uso ha disminuido drásticamente.</p>
+        <p><a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Drracket.png" target="_blank">Ver entorno de desarrollo Scheme</a></p>
+        <p class="broken-link">Esta información fue borrada o no está disponible en estos momentos.</p>
+      </section>
+
+      <section>
+        <h2>Minimalismo extremo = caos implementacional</h2>
+        <p>El diseño minimalista de Scheme busca mantener una base sintáctica simple. Sin embargo, esto ha resultado en implementaciones incompatibles, donde cada versión añade extensiones propias sin consenso, fragmentando el ecosistema.</p>
+        <p><a href="https://upload.wikimedia.org/wikipedia/commons/3/3b/WikiBooks_Scheme_REPL.png" target="_blank">Ver ejemplo de REPL en Scheme</a></p>
+        <p class="broken-link">Esta información fue borrada o no está disponible en estos momentos.</p>
+      </section>
+
+      <section>
+        <h2>Espacio de nombres compartido</h2>
+        <p>Scheme asigna el mismo espacio de nombres a funciones, variables y macros. Esto puede causar ambigüedad y dificulta la depuración de errores semánticos, especialmente en proyectos colaborativos o con código legado.</p>
+      </section>
+
+      <section>
+        <h2>Ausencia de orientación a objetos</h2>
+        <p>No ofrece una sintaxis nativa para programación orientada a objetos. Aunque extensiones como TinyCLOS intentan compensarlo, son incompatibles entre implementaciones y carecen de documentación estandarizada.</p>
+      </section>
+
+      <section>
+        <h2>Fragmentación del ecosistema</h2>
+        <p>Con estándares como R5RS, R6RS, R7RS, y variantes como Guile, Racket, Chicken o Chez, los usuarios enfrentan una jungla de herramientas no compatibles. Esta falta de cohesión ha alejado al desarrollador moderno.</p>
+        <p><a href="https://schemers.org/Documents/Standards/" target="_blank">Explorar los estándares de Scheme</a></p>
+      </section>
+
+      <section>
+        <h2>Adopción industrial nula</h2>
+        <p>Scheme no aparece en encuestas de uso profesional como el Stack Overflow Developer Survey. Ninguna gran empresa lo adopta para sus plataformas principales, y su soporte para bibliotecas modernas es casi inexistente.</p>
+      </section>
+
+      <section>
+        <h2>Paradigma académico sin respaldo práctico</h2>
+        <p>Es útil para enseñar recursión, listas y evaluación perezosa, pero no ofrece frameworks productivos, integración con herramientas de devops, ni utilidades robustas para diseño de interfaces gráficas.</p>
+      </section>
+
+      <section>
+        <h2>Sintaxis densa y poco accesible</h2>
+        <p>El estilo de paréntesis anidados, aunque estructurado, resulta intimidante para nuevos programadores. Comparado con la legibilidad de lenguajes modernos como Python, Scheme exige un esfuerzo mental adicional constante.</p>
+      </section>
+
+      <section>
+        <h2>Conclusión</h2>
+        <p>Scheme es elegante, compacto y filosóficamente interesante. Pero su resistencia al cambio y su enfoque académico lo han convertido en un lenguaje marginal en un mundo que avanza hacia aplicaciones complejas, colaborativas y comerciales.</p>
+      </section>
+    </main>
+
+    <aside>
+      <div class="sidebar-box">
+        <h3>Lenguajes recomendados en 2011</h3>
+        <ul>
+          <li><a href="https://golang.org" target="_blank">Go: rendimiento y concurrencia simplificada</a></li>
+          <li><a href="https://www.rust-lang.org" target="_blank">Rust: el futuro de la programación segura</a></li>
+          <li><a href="https://www.python.org" target="_blank">Python: versatilidad y comunidad</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Recursos externos</h3>
+        <ul>
+          <li><a href="https://schemers.org" target="_blank">Schemers.org (archivos y estándares)</a></li>
+          <li><a href="https://www.gnu.org/software/guile/" target="_blank">Guile (Scheme oficial de GNU)</a></li>
+          <li><a href="https://racket-lang.org" target="_blank">Racket (implementación moderna)</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Wikipedia: Scheme</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+  © 2011 Xataka — Tecnología, cultura geek y mucho más.
+  <div class="footer-links">
+    <strong>También te puede interesar:</strong><br>
+    <a href="https://www.xataka.com/ordenadores/como-evolucionan-procesadores-intel" target="_blank">Evolución de procesadores Intel</a> |
+    <a href="https://www.xataka.com/moviles/comparativa-moviles-gama-media-2024" target="_blank">Comparativa móviles gama media</a> |
+    <a href="https://www.xataka.com/vehiculos/tesla-model-3-probamos-coche-electrico" target="_blank">Tesla Model 3: Análisis completo</a> |
+    <a href="https://www.xataka.com/robotica-e-ia/como-avanza-inteligencia-artificial-2025" target="_blank">IA en 2025: Avances y dilemas</a> |
+    <a href="https://www.xataka.com/videojuegos/historia-evolucion-playstation" target="_blank">Historia de la PlayStation</a>
+  </div>
+</footer>
