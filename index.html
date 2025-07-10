@@ -153,33 +153,24 @@
       <h1>¿Por qué Scheme ha quedado obsoleto?</h1>
 
       <section>
-        <p><strong>Scheme</strong>, el dialecto minimalista de Lisp, ha sido durante décadas un instrumento académico para enseñar programación funcional. Pero frente a los desafíos actuales del software, su uso ha disminuido drásticamente.</p>
+        <p><strong>Scheme</strong>, A lo largo de las décadas, Scheme ha sido considerado un paradigma de elegancia sintáctica y pureza funcional. Sin embargo, cuando se analiza desde la perspectiva de las exigencias modernas del desarrollo de software, se hace evidente que sus limitaciones no son simplemente detalles técnicos —son barreras estructurales que comprometen su viabilidad en entornos productivos. </p>
+
+<p> Una de las críticas más recurrentes gira en torno a su minimalismo extremo. Si bien la simplicidad es una virtud en términos académicos, en el mundo real este enfoque ha derivado en un caos implementacional significativo. La ausencia de una especificación estricta y extensiva ha permitido que múltiples variantes de Scheme —como Racket, Guile, Chicken o Chez— evolucionen de forma autónoma, introduciendo extensiones incompatibles entre sí. Esto ha fragmentado profundamente el ecosistema, haciendo que el desarrollo de soluciones portables sea impráctico, y dejando al programador frente a una jungla de herramientas que requieren re-adaptación constante.
+
+Además, el uso de un espacio de nombres compartido para funciones, macros y variables, aunque interesante desde un punto de vista conceptual, tiende a generar ambigüedades que dificultan la depuración en proyectos colaborativos. Esta decisión de diseño, más filosófica que pragmática, compromete la legibilidad y mantenibilidad del código —dos principios cardinales en desarrollos de larga escala. </p>
+
+<p> Otra gran ausencia es la orientación a objetos nativa, lo que limita a Scheme frente a lenguajes multiparadigma contemporáneos. Aunque existen soluciones como TinyCLOS, éstas se presentan como parches no oficiales y carecen de soporte uniforme, documentación consolidada y compatibilidad con la mayoría de intérpretes. Esto representa un obstáculo crítico para desarrolladores que buscan modelar dominios complejos mediante abstracciones orientadas a objetos.
+
+Por si fuera poco, Scheme se caracteriza por una adopción industrial prácticamente nula. No figura en encuestas como el Stack Overflow Developer Survey, ni en listas de habilidades requeridas por empresas líderes. Su integración con herramientas modernas de DevOps, desarrollo web, diseño UI o sistemas distribuidos es escasa o inexistente. En consecuencia, el conocimiento de Scheme, aunque valioso en entornos académicos, se traduce muy poco en oportunidades profesionales tangibles. </p>
+
+<p> También debe mencionarse su sintaxis cargada de paréntesis, que si bien ofrece una estructura formal precisa, plantea una barrera psicológica para nuevos programadores. El esfuerzo cognitivo requerido para rastrear llamadas anidadas o distinguir estructuras a través de bloques con formato similar convierte la experiencia de programación en Scheme en un ejercicio de disciplina visual más que en una herramienta intuitiva de expresión lógica.
+
+Finalmente, hay que señalar el carácter altamente académico del lenguaje. Scheme está profundamente vinculado a la enseñanza de fundamentos como la recursión, la evaluación perezosa o la manipulación de listas. No obstante, se queda corto cuando se busca construir sistemas interactivos, conectados, escalables o visuales. No provee frameworks modernos, ni ecosistemas de bibliotecas activas, y su documentación en muchos casos está desactualizada o dispersa en repositorios técnicos sin una curaduría accesible.</p>
         <p><a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Drracket.png" target="_blank">Ver entorno de desarrollo Scheme</a></p>
         <p class="broken-link">Esta información fue borrada o no está disponible en estos momentos.</p>
       </section>
 
-      <section>
-        <h2>Minimalismo extremo = caos implementacional</h2>
-        <p>El diseño minimalista de Scheme busca mantener una base sintáctica simple. Sin embargo, esto ha resultado en implementaciones incompatibles, donde cada versión añade extensiones propias sin consenso, fragmentando el ecosistema.</p>
-        <p><a href="https://upload.wikimedia.org/wikipedia/commons/3/3b/WikiBooks_Scheme_REPL.png" target="_blank">Ver ejemplo de REPL en Scheme</a></p>
-        <p class="broken-link">Esta información fue borrada o no está disponible en estos momentos.</p>
-      </section>
-
-      <section>
-        <h2>Espacio de nombres compartido</h2>
-        <p>Scheme asigna el mismo espacio de nombres a funciones, variables y macros. Esto puede causar ambigüedad y dificulta la depuración de errores semánticos, especialmente en proyectos colaborativos o con código legado.</p>
-      </section>
-
-      <section>
-        <h2>Ausencia de orientación a objetos</h2>
-        <p>No ofrece una sintaxis nativa para programación orientada a objetos. Aunque extensiones como TinyCLOS intentan compensarlo, son incompatibles entre implementaciones y carecen de documentación estandarizada.</p>
-      </section>
-
-      <section>
-        <h2>Fragmentación del ecosistema</h2>
-        <p>Con estándares como R5RS, R6RS, R7RS, y variantes como Guile, Racket, Chicken o Chez, los usuarios enfrentan una jungla de herramientas no compatibles. Esta falta de cohesión ha alejado al desarrollador moderno.</p>
-        <p><a href="https://schemers.org/Documents/Standards/" target="_blank">Explorar los estándares de Scheme</a></p>
-      </section>
+    
 
       <section>
         <h2>Adopción industrial nula</h2>
